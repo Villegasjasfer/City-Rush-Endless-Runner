@@ -1,0 +1,38 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Analyze Flutter game",
+			"type": "shell",
+			"command": "flutter",
+			"args": [
+				"analyze",
+				"flutter_app"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Test City Rush",
+			"type": "shell",
+			"command": "flutter",
+			"args": ["test"],
+			"isBackground": false,
+			"problemMatcher": [],
+			"options": {
+				"cwd": "${workspaceFolder}/flutter_app"
+			}
+		},
+		{
+			"label": "Build City Rush APK",
+			"type": "shell",
+			"command": "flutter",
+			"args": ["build", "apk", "--release"],
+			"isBackground": false,
+			"problemMatcher": [],
+			"options": {
+				"cwd": "${workspaceFolder}/flutter_app"
+			}
+		}
+	]
+}
